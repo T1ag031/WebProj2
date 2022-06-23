@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Encomendas</title>
+</head>
+<style>
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+    }
+
+    td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #dddddd;
+    }
+    .imgpos{
+        top:0;
+        left: 630px;
+        position: relative;
+    }
+    .txtpos1{
+        left: 620px;
+        position: relative;
+    }
+    .voltarbuttonpos{
+        left: 600px;
+        position: relative;
+        width: 200px;
+        height: 30px;
+        background-color: #77AFFF;
+        border-radius: 5px;
+    }
+    .inputnpos{
+        left: 425px;
+        position: relative;
+        height: 30px;
+    }
+
+</style>
+<body>
+<img src="/assets/viatex.png" width="150" height="150" class="imgpos"></img>
+<h1 class="txtpos1">Encomendas</h1>
+<table>
+    <tr>
+        <th>Número de Venda</th>
+        <th>Data</th>
+        <th>Valor Total</th>
+    </tr>
+    <tr>
+        <th ></th>
+        <th ></th> <!--ver contenteditable-->
+        <th></th>
+    </tr>
+
+</table>
+<p></p>
+<label>
+    <input type="text" placeholder="Número de Venda" name="nVenda" required size="80" class="inputnpos">
+</label>
+<p></p>
+<label>
+    <input type="text" placeholder="Data" name="data" required size="80" class="inputnpos">
+</label>
+<p></p>
+<label>
+    <input type="text" placeholder="Valor Total" name="valor" required size="80" class="inputnpos">
+</label>
+<p></p>
+<button class="voltarbuttonpos">Editar</button>
+<p></p>
+<button class="voltarbuttonpos">Voltar</button>
+
+</body>
+</html>
